@@ -49,7 +49,6 @@ func parseDateParam(r *http.Request, key string) (string, error) {
 	if val == "" {
 		return "", fmt.Errorf("missing parameter %s", key)
 	}
-	// проверить формат
 	_, err := time.Parse("2006-01-02", val)
 	if err != nil {
 		return "", fmt.Errorf("invalid date format %s", val)
