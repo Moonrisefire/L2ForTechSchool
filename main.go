@@ -28,7 +28,6 @@ func main() {
 	human := flag.Bool("h", false, "Сортировка по человекочитаемым числам (K, M, G)")
 	flag.Parse()
 
-	// Determine input: file or stdin
 	var reader io.Reader
 	if flag.NArg() > 0 {
 		file, err := os.Open(flag.Arg(0))
