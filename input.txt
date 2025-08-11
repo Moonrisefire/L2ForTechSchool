@@ -1,0 +1,7 @@
+Hello	World
+this is a test line
+Another	line	with	Pattern
+pattern matched here
+no	match here
+Last pattern line
+End of file
