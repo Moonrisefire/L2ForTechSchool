@@ -27,7 +27,7 @@ func Or(channels ...<-chan interface{}) <-chan interface{} {
 			case <-channels[0]:
 			case <-channels[1]:
 			case <-channels[2]:
-			case <-Or(append(channels[3:], orDone)...): // рекурсивное объединение
+			case <-Or(append(channels[3:], orDone)...):
 			}
 		}
 	}()
